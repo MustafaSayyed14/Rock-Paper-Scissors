@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.option {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  /* border: 3px solid transparent; */
+}
+
+img:hover {
+  border: 3px solid #000;
+}
+
+.scores {
+  display: flex;
+  column-gap: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#user-score + p, #comp-score ~ p {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+#user-score,
+#comp-score {
+  font-size: 35px;
+}
+
+#msg {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 25px;
+    margin-top: 20px;
+}
